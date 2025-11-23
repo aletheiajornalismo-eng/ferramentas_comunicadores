@@ -1,0 +1,86 @@
+# Guia de Ferramentas de Comunicação
+
+Este é um projeto de página única (Single Page Application) que funciona como um guia curado de ferramentas digitais para profissionais de comunicação. O objetivo é centralizar e facilitar o acesso a plataformas que otimizam a rotina operacional em áreas como Reputação, Social Listening, Marketing de Influência, entre outras.
+
+A aplicação foi desenvolvida com HTML, CSS e JavaScript puros, sem a necessidade de frameworks, e os dados são carregados dinamicamente a partir de um arquivo JSON.
+
+## ✨ Funcionalidades
+
+- **Visualização de Categorias**: A página inicial exibe as principais categorias de ferramentas em um layout de grade visualmente atraente.
+- **Filtragem por Categoria**: O usuário pode selecionar uma categoria no menu suspenso ou clicar em um dos boxes de categoria para ver apenas as ferramentas correspondentes.
+- **Busca por Termo**: Um campo de pesquisa permite buscar por palavras-chave no nome, descrição ou tags das ferramentas.
+- **Design Responsivo**: A interface se adapta a diferentes tamanhos de tela, de desktops a dispositivos móveis.
+- **Limpeza de Filtros**: Um botão "Limpar seleção" permite retornar facilmente à visualização inicial.
+- **Perfil do Autor**: Uma seção dedicada apresenta a curadora do conteúdo, Alethéia Rocha.
+
+## 📂 Estrutura do Projeto
+
+O projeto é composto pelos seguintes arquivos:
+
+### `index.html`
+
+É o arquivo principal que estrutura toda a página web. Ele contém:
+- A estrutura semântica do HTML5 (`<header>`, `<main>`, `<footer>`, `<section>`).
+- Links para a folha de estilos (`style.css`), o script (`Script.js`) e a biblioteca de ícones (Font Awesome).
+- Os elementos estáticos da interface, como o cabeçalho, a seção de busca, o perfil do autor e o rodapé.
+- O contêiner `<div id="contentArea"></div>`, que é preenchido dinamicamente pelo JavaScript com as categorias ou a lista de ferramentas.
+
+### `style.css`
+
+Este arquivo é responsável por toda a estilização e aparência visual da aplicação. Suas principais características são:
+
+- **Variáveis CSS**: Utiliza variáveis (`:root`) para um tema de cores consistente e de fácil manutenção (`--code-primary`, `--code-bg`, `--code-accent`).
+- **Layout Flexbox**: Amplamente utilizado para criar layouts flexíveis e alinhados, como o perfil do autor e os controles de busca.
+- **Design Responsivo**: Contém media queries (`@media (max-width: 768px)`) para ajustar o layout em telas menores.
+- **Animações e Transições**: Efeitos sutis de `fadeIn`, `fadeUp` e `hover` para melhorar a experiência do usuário.
+- **Estilização de Componentes**: Define a aparência de todos os elementos, desde os botões e campos de busca até as tabelas e os cards de categoria.
+
+### `data.json`
+
+Funciona como um banco de dados simples para a aplicação. É um arquivo JSON que contém um array de objetos, onde cada objeto representa uma ferramenta e possui a seguinte estrutura:
+
+```json
+{
+  "name": "Nome da Ferramenta",
+  "description": "Descrição detalhada do que a ferramenta faz.",
+  "link": "https://sitedaferramenta.com/",
+  "category": "Categoria Principal",
+  "tags": [ // Opcional
+    "Ponto chave ou funcionalidade 1.",
+    "Ponto chave ou funcionalidade 2."
+  ]
+}
+```
+
+Para adicionar, remover ou modificar ferramentas, basta editar este arquivo.
+
+### `Script.js` (Não fornecido, mas inferido)
+
+Este é o cérebro da aplicação, responsável por toda a interatividade e manipulação de dados. Suas funções incluem:
+
+- **Carregar Dados**: Faz uma requisição `fetch` para o arquivo `data.json` ao carregar a página.
+- **Renderização Dinâmica**:
+    - Popula o menu suspenso `<select>` com as categorias únicas extraídas do `data.json`.
+    - Renderiza a visualização inicial com os boxes de categoria.
+    - Renderiza a tabela de resultados com as ferramentas filtradas.
+- **Manipulação de Eventos**:
+    - Escuta eventos de clique nos botões de busca e limpeza.
+    - Escuta eventos de clique nos boxes de categoria e no link "home".
+    - Gerencia a lógica de filtragem combinando a categoria selecionada e o termo de busca.
+- **Gerenciamento de Estado da UI**: Controla a visibilidade do botão "Limpar seleção" e atualiza o conteúdo da área principal (`#contentArea`).
+
+## 🚀 Como Executar
+
+Como o projeto utiliza a API `fetch()` para carregar o `data.json` localmente, abri-lo diretamente no navegador (`file:///...`) pode causar um erro de CORS.
+
+A maneira recomendada de executá-lo é através de um servidor web local.
+
+1.  **Usando a extensão Live Server no VS Code:**
+    - Instale a extensão Live Server.
+    - Abra a pasta do projeto no VS Code.
+    - Clique com o botão direito no arquivo `index.html` e selecione "Open with Live Server".
+
+2.  **Usando Python:**
+    - Navegue até a pasta do projeto pelo terminal.
+    - Execute o comando: `python -m http.server` (para Python 3) ou `python -m SimpleHTTPServer` (para Python 2).
+    - Abra o navegador e acesse `http://localhost:8000`.
