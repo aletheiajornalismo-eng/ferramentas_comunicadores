@@ -1,0 +1,375 @@
+/* Importa Montserrat nas variações necessárias */ 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap');
+
+:root {
+  --code-primary: #184a63;
+  --code-bg: #f9e6cf;
+  --code-accent: #8a0034;
+}
+
+body {
+  font-family: 'Montserrat', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background-color: var(--code-bg);
+  color: var(--code-primary);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.page-wrapper {
+  max-width: 1150px;
+  margin: 0 auto;
+  flex: 1;
+  padding: 2rem 1.5rem;
+}
+
+h1, h2 {
+  text-align: left;
+  margin: 0;
+}
+
+.header-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 2.4rem;
+  color: var(--code-primary);
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: var(--code-accent);
+  margin-bottom: 1.5rem;
+}
+
+.intro-box {
+  background: var(--code-primary);
+  color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  margin-bottom: 2rem;
+}
+
+.intro-text {
+  font-weight: 400;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.search-section {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 2rem;
+  animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.search-controls {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.category-select, #searchInput {
+  padding: 0.6rem 0.75rem;
+  border-radius: 50px;
+  border: 1px solid var(--code-primary);
+  background-color: #ffffff;
+  font-size: 0.95rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.gradient-btn {
+  padding: 0.65rem 1.5rem;
+  border: none;
+  border-radius: 50px;
+  color: #ffffff;
+  font-weight: 700;
+  background: linear-gradient(135deg, #8a0034, #b30a4d);
+  box-shadow: 0 4px 10px rgba(138, 0, 52, 0.4);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.gradient-btn:hover {
+  background: linear-gradient(135deg, #b30a4d, #8a0034);
+  box-shadow: 0 6px 14px rgba(138, 0, 52, 0.6);
+  transform: translateY(-2px);
+}
+
+.gradient-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(138, 0, 52, 0.3);
+}
+
+.clear-btn {
+  padding: 0.65rem 1.5rem;
+  border: 1px solid var(--code-primary);
+  border-radius: 50px;
+  color: var(--code-primary);
+  background-color: transparent;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.clear-btn:hover {
+  background-color: var(--code-primary);
+  color: #ffffff;
+}
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 1.5rem;
+  animation: fadeUp 0.8s ease-out;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+th {
+  text-align: left;
+  font-size: 1.1rem;
+  color: var(--code-primary);
+  font-weight: 900;
+  padding-bottom: 0.75rem;
+}
+
+td {
+  background: linear-gradient(145deg, #ffffff, #f3d7c1);
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.15);
+  vertical-align: top;
+
+  /* Flexbox para alinhar o conteúdo */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Empurra o conteúdo e o botão para as extremidades */
+}
+
+/* Novo container para a grade de categorias na home */
+.home-categories-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+/* Estilo para os boxes de categoria na home page */
+.category-box {
+  flex-basis: calc(45% - 1.5rem); /* Base para 2 colunas, considerando o gap */
+  max-width: 250px; /* Limita a largura máxima */
+  aspect-ratio: 1 / 1; /* Força o box a ser quadrado */
+  background: linear-gradient(145deg, #ffffff, #f3d7c1);
+  border-radius: 20px; /* Pontas mais arredondadas */
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 1rem;
+}
+
+.category-box:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.category-box i {
+  font-size: 2.5rem;
+  color: var(--code-accent);
+  margin-bottom: 1rem;
+}
+
+.category-box h3 {
+  font-size: 1.1rem;
+  color: var(--code-primary);
+  margin: 0;
+  font-weight: 900;
+}
+
+.tool-content {
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+td strong {
+  color: var(--code-accent);
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+td span {
+  font-size: 0.85rem;
+  color: var(--code-primary);
+}
+
+.tool-link-wrapper {
+  margin-top: 1rem; /* Espaço entre a descrição e o botão */
+  text-align: right; /* Alinha o botão à direita */
+}
+
+.tool-link {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: var(--code-primary);
+  color: #ffffff;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  transition: background-color 0.3s ease;
+}
+
+.tool-link:hover {
+  background-color: var(--code-accent);
+  color: #ffffff;
+}
+
+a {
+  color: var(--code-primary);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:hover {
+  color: var(--code-accent);
+}
+
+.footer {
+  background: linear-gradient(135deg, var(--code-primary), #0f3245);
+  color: #ffffff;
+  text-align: center;
+  padding: 2rem 1rem;
+  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.footer h3 {
+  margin-bottom: 1rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 0;
+  margin: 0;
+}
+
+.social-links a {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  background: linear-gradient(135deg, #8a0034, #b30a4d);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  transform: translateY(-3px);
+}
+
+.social-links a i {
+  font-size: 1.5rem; /* Ajusta o tamanho do ícone dentro do círculo */
+  line-height: 1; /* Garante alinhamento vertical perfeito */
+}
+
+/* Remove o estilo dos boxes vazios na tabela */
+.empty-cell {
+  background: none;
+  box-shadow: none;
+  border: none;
+}
+
+.no-results {
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 3rem 1rem !important;
+  font-weight: 700;
+  color: var(--code-accent);
+}
+
+/* Seção de Perfil do Autor */
+.author-profile {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin: 4rem auto 0 auto; /* Centraliza a seção na página */
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 15px;
+  border: 1px solid rgba(24, 74, 99, 0.1);
+  max-width: 800px; /* Define uma largura máxima para a seção */
+  box-sizing: border-box; /* Garante que o padding não afete a largura total */
+}
+
+.author-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border: 4px solid var(--code-primary);
+}
+
+.author-info {
+  flex: 1;
+}
+
+.author-name {
+  font-size: 1.2rem;
+  color: var(--code-accent);
+  margin: 0 0 0.5rem 0;
+}
+
+.author-bio {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  margin: 0.5;
+}
+
+@media (max-width: 768px) {
+  h1 { font-size: 1.8rem; }
+  h2 { font-size: 1.1rem; }
+  .search-controls { flex-direction: column; align-items: flex-start; }
+  .category-select, #searchInput { width: 100%; }
+  .gradient-btn { width: 100%; text-align: center; }
+  .author-profile {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem;
+  }
+  /* Centraliza o 3º box de categoria (layout 2–1–2) */
+.category-box.center-row {
+  flex-basis: 100%;
+  max-width: 260px;
+  margin: 0 auto;
+}

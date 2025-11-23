@@ -1,0 +1,137 @@
+[
+  {
+    "name": "RepTrak",
+    "description": "Plataforma de inteligência de marca e reputação. Mensura como públicos pensam e sentem sobre a marca, gerando scores e insights estratégicos para alinhar reputação, comportamentos de stakeholders e resultados de negócios.",
+    "link": "https://www.reptrak.com/",
+    "category": "Reputação"
+  },
+  {
+    "name": "Merco",
+    "description": "Ranking de reputação corporativa baseado em metodologia multistakeholder auditada pela KPMG. Avalia reputação de empresas a partir de 18 fontes, combinando pesquisas com indicadores objetivos, garantindo transparência, independência e rigor na medição.",
+    "link": "https://www.merco.info/br/",
+    "category": "Reputação"
+  },
+  {
+    "name": "Caliber",
+    "description": "Plataforma Real‑Time Tracker monitora a reputação e a saúde da marca continuamente. Analisa percepções internas e externas, avalia impactos de eventos, acompanha concorrentes e fornece indicadores proativos e recomendações estratégicas via consultoria especializada.",
+    "link": "https://groupcaliber.com.br/",
+    "category": "Reputação"
+  },
+  {
+    "name": "Curado Comunicação",
+    "description": "Com metodologia própria, iVGR, a Curado pode ter bom custo-benefício para a análise da imagem/reputação de uma marca.",
+    "link": "https://www.curadocomunicacao.com.br/",
+    "category": "Reputação"
+  },
+  {
+    "name": "Claritor",
+    "description": "Solução modular de inteligência de reputação que transforma dados digitais em insights estratégicos e planos de ação. Permite compor módulos conforme a necessidade, analisando reputação em tempo real e oferecendo relatórios táticos para apoiar decisões.",
+    "link": "https://claritor.com/",
+    "category": "Reputação"
+  },
+  {
+    "name": "Cortex Brand",
+    "description": "Módulo da plataforma Cortex dedicado a operações de marca e reputação. Estrutura dados públicos e privados, aplica machine learning e disponibiliza mais de 70 indicadores para monitorar notoriedade, impacto e performance de marketing, com dashboards personalizáveis.",
+    "link": "https://www.cortex-intelligence.com/",
+    "category": "Reputação"
+  },
+  {
+    "name": "Charisma",
+    "description": "Primeira plataforma de gestão de narrativas do Brasil, integra social listening, monitoramento de imprensa e influenciadores. Usa IA combinada à interpretação humana para transformar dados em decisões, oferece métricas de saúde de marca e alerta de crises via índice próprio.",
+    "link": "https://charismabrain.ai/",
+    "category": "Social Listening"
+  },
+  {
+    "name": "Buzzmonitor",
+    "description": "Suite de gestão de redes sociais com IA. Reúne monitoramento, atendimento ao cliente, BI, agendamento e dashboards. Analisa conversas e concorrentes em tempo real, aplica modelos de sentimento, integra ChatGPT e mais de 50 métricas para insights rápidos.",
+    "link": "https://buzzmonitor.com/",
+    "category": "Social Listening"
+  },
+  {
+    "name": "Stilingue by Blip",
+    "description": "Plataforma inteligente que monitora conversas digitais em tempo real em texto, imagem, áudio e vídeo. Utiliza NLP treinada em português para classificar sentimentos automaticamente, oferece dashboards com dados acionáveis e módulos de atendimento, benchmarks e social listening.",
+    "link": "https://digital.blip.ai/stilingue/plataforma-inteligente/",
+    "category": "Social Listening"
+  },
+  {
+    "name": "Zeeng",
+    "description": "Plataforma de big data analytics voltada a marketing e comunicação. Consolida dados de redes sociais, mídia e mercado para análises competitivas, benchmarking e insights estratégicos, permitindo monitoramento de marcas e concorrentes de forma integrada.",
+    "link": "https://zeeng.com.br/quem-somos/",
+    "category": "Social Listening"
+  },
+  {
+    "name": "Influency.me",
+    "description": "Ecossistema de marketing de influência com soluções Studio, House e Stars. Permite buscar e contratar influenciadores, planejar campanhas, gerir contratos e pagamentos, coletar posts e stories automaticamente e medir resultados em tempo real. Oferece serviço full‑service com casting próprio.",
+    "link": "https://influency.me/",
+    "category": "Marketing de Influência"
+  },
+  {
+    "name": "I’Max",
+    "description": "Plataforma de mailing e distribuição de releases. Disponibiliza 60 mil contatos de jornalistas em 14 mil veículos com filtros por editoria, permite redigir e enviar releases e analisar resultados. Atualiza contatos continuamente, possui tecnologia anti‑spam com IA e classifica engajamento de jornalistas.",
+    "link": "https://lp2.i-maxpr.com/",
+    "category": "Mailing de Imprensa"
+  },
+  {
+    "name": "Press Manager",
+    "description": "Líder em gestão de comunicação no Brasil. Oferece mailing com 40 mil jornalistas e 15 mil veículos, distribuição de releases com templates e relatórios, monitoramento em tempo real de mídia online, impressa e social com análises de palavras‑chave, além de ferramentas para follow‑up e clipping.",
+    "link": "https://www.pressmanager.com.br/",
+    "category": "Mailing de Imprensa"
+  },
+  {
+    "name": "Comunique-se",
+    "description": "Pioneira e top of mind em relações com a mídia. Disponibiliza mailing de 33 mil jornalistas e cobertura de mais de um milhão de veículos em rádio, TV, portais, blogs e redes sociais. Acelera envio e acompanhamento de releases, com monitoramento, relatórios e automação que reduzem 70% do tempo de análise.",
+    "link": "https://comunique-se.com.br/",
+    "category": "Mailing de Imprensa"
+  },
+  {
+    "name": "PR Newswire",
+    "description": "Rede global de distribuição de releases com alcance em milhares de veículos. Sua plataforma PR Newswire Amplify ajuda a planejar campanhas, criar conteúdo e ampliar alcance, com segmentação por audiência, métricas e relatórios para mensuração de resultados.",
+    "link": "https://www.prnewswire.com/",
+    "category": "Publieditorial"
+  },
+  {
+    "name": "DINO",
+    "description": "Primeiro serviço brasileiro de distribuição de releases com garantia de publicação. Permite criar e enviar releases que são replicados em rede de portais e agências de notícias, com modelo por assinatura acessível. Já publicou mais de 40 mil releases e tem mais de 140 veículos parceiros e 25 mil jornalistas.",
+    "link": "https://dino.com.br/",
+    "category": "Publieditorial"
+  },
+  {
+    "name": "PRNEWS.IO",
+    "description": "Plataforma online para contratação de matérias patrocinadas e construção de autoridade de marca. Conecta empresas a mais de 100 mil veículos em 175 países com opções de segmentação por país e nicho, otimização para SEO e reputação, API, assinaturas PRO e pacotes de PR.",
+    "link": "https://prnews.io/",
+    "category": "Publieditorial"
+  },
+{
+    "name": "Hootsuite",
+    "description": "Plataforma de gestão de mídias sociais que permite agendamento, monitoramento básico e engajamento em diversas redes sociais.",
+    "link": "https://www.hootsuite.com/pt",
+    "category": "Social Listening",
+    "tags": [
+      "Permite monitorar menções e interações em tempo real, sendo uma ferramenta de primeira resposta em gerenciamento de crises sociais.",
+      "Facilita a distribuição de conteúdo corporativo de forma coordenada em múltiplos perfis.",
+      "Workflow de aprovação e colaboração para equipes grandes de comunicação e marketing.",
+      "Relatórios de performance de conteúdo e engajamento da audiência."
+    ]
+  },
+  {
+    "name": "Airfluencers",
+    "description": "Plataforma que utiliza big data para identificar, gerenciar e medir a performance de influenciadores digitais, com foco em autenticidade e dados demográficos.",
+    "link": "https://www.airfluencers.com.br",
+    "category": "Marketing de Influência",
+    "tags": [
+      "Algoritmos que detectam fraudes e seguidores falsos, garantindo a credibilidade dos influenciadores contratados.",
+      "Mapeamento detalhado do público-alvo dos creators, alinhando a mensagem corporativa com a audiência correta.",
+      "Geração de relatórios de métricas unificadas, comparando diferentes campanhas e o impacto no brand awareness.",
+      "Solução flexível para campanhas de micro e macro-influenciadores."
+    ]
+  },
+{
+    "name": "Mundo Mapping",
+    "description": "Plataforma de gestão de influenciadores digitais.",
+    "link": "https://mundomapping.com/",
+    "category": "Marketing de Influência",
+    "tags": [
+      "É uma nova plataforma inovadora que facilita a implementação do marketing de influência."
+    ]
+  }
+]
